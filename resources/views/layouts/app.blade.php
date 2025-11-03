@@ -5,30 +5,33 @@
     <title>CV. Restu Guru Promosindo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{-- CSS --}}
+    {{-- ======================= CSS ======================= --}}
     <link rel="stylesheet" href="{{ asset('template/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/css/icomoon.css') }}"> {{-- Font icon --}}
     <link rel="stylesheet" href="{{ asset('template/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/flexslider.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
+
+    {{-- Modernizr (untuk support IE & animasi lama) --}}
     <script src="{{ asset('template/js/modernizr-2.6.2.min.js') }}"></script>
 </head>
 
 <body>
 
 <div id="colorlib-page">
-    {{-- Toggle button for mobile menu --}}
+    {{-- ======================= TOGGLE MENU (Mobile) ======================= --}}
     <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 
-    {{-- Sidebar --}}
+    {{-- ======================= SIDEBAR ======================= --}}
     <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
         <h1 id="colorlib-logo">
             <a href="{{ route('home') }}">Restu Guru<span>.</span></a>
         </h1>
 
+        {{-- NAVIGATION --}}
         <nav id="colorlib-main-menu" role="navigation">
             <ul>
                 <li class="{{ request()->routeIs('home') ? 'colorlib-active' : '' }}">
@@ -52,7 +55,7 @@
             </ul>
         </nav>
 
-        {{-- Footer --}}
+        {{-- FOOTER --}}
         <div class="colorlib-footer">
             <p>
                 <small>
@@ -69,24 +72,30 @@
         </div>
     </aside>
 
-    {{-- Main Content --}}
+    {{-- ======================= MAIN CONTENT ======================= --}}
     <div id="colorlib-main">
         @yield('content')
     </div>
 </div>
 
-{{-- JS --}}
+{{-- ======================= JAVASCRIPT ======================= --}}
 <script src="{{ asset('template/js/jquery.min.js') }}"></script>
-<script src="{{ asset('template/js/jquery.easing.1.3.js') }}"></script>
 <script src="{{ asset('template/js/bootstrap.min.js') }}"></script>
+
+{{-- Sticky sidebar (harus setelah jQuery, sebelum main.js) --}}
+<script src="{{ asset('template/js/sticky-kit.min.js') }}"></script>
+
+<script src="{{ asset('template/js/jquery.easing.1.3.js') }}"></script>
 <script src="{{ asset('template/js/jquery.waypoints.min.js') }}"></script>
 <script src="{{ asset('template/js/jquery.flexslider-min.js') }}"></script>
 <script src="{{ asset('template/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('template/js/jquery.countTo.js') }}"></script>
 <script src="{{ asset('template/js/jquery.magnific-popup.min.js') }}"></script>
+
+{{-- File utama terakhir --}}
 <script src="{{ asset('template/js/main.js') }}"></script>
 
-{{-- Tambahkan hanya di halaman Contact --}}
+{{-- Tambahan khusus halaman (misal Contact) --}}
 @stack('scripts')
 
 </body>

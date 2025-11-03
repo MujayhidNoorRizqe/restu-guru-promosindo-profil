@@ -40,7 +40,6 @@
         </div>
     </div>
 </section>
-
 <section class="colorlib-about" data-section="history">
     <div class="colorlib-narrow-content">
         <div class="row">

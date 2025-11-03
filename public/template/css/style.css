@@ -1700,3 +1700,24 @@ body.offcanvas .colorlib-nav-toggle {
         margin-bottom: 25px;
     }
 }
+/* === BLOG SECTION FIX === */
+.blog-entry {
+    background: #fff;
+    margin-bottom: 40px;
+    display: block;
+}
+.blog-entry .blog-img {
+    width: 100%;
+    height: 250px; /* tinggi seragam */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 25px;
+}
+.blog-entry .desc h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
