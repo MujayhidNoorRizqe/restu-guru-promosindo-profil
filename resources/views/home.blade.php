@@ -12,7 +12,7 @@
                             <div class="slider-text-inner">
                                 <div class="desc">
                                     <h1>An Inspiring Built Space</h1>
-                                    <h2>100% HTML5 Bootstrap template Made by colorlib.com</h2>
+                                    <h2>100% HTML5 Bootstrap template made by colorlib.com</h2>
                                     <p><a href="{{ route('work') }}" class="btn btn-primary btn-learn">View Project <i class="icon-arrow-right3"></i></a></p>
                                 </div>
                             </div>

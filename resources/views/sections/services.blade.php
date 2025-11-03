@@ -1,37 +1,44 @@
-<section id="services" class="colorlib-services" data-section="services">
+@extends('layouts.app')
+
+@section('content')
+<div id="colorlib-services" class="colorlib-services">
     <div class="container">
         <div class="row text-center">
-            <span class="heading-meta">Our Services</span>
+            <h2 class="bold">Our Services</h2>
             <h2 class="colorlib-heading">Layanan Kami</h2>
         </div>
-        <div class="row">
+
+        <div class="row row-pb-md">
             <div class="col-md-4 text-center animate-box">
-                <div class="services">
-                    <span class="icon"><i class="icon-brush"></i></span>
+                <div class="services-wrap">
+                    <div class="services-img" style="background-image: url('{{ asset('template/images/services-1.jpg') }}');"></div>
                     <div class="desc">
-                        <h3>Desain Kreatif</h3>
-                        <p>Layanan desain logo, banner, dan promosi digital dengan sentuhan profesional.</p>
+                        <h3>Digital & Offset Printing</h3>
+                        <p>Cetak brosur, banner, kemasan, kartu nama, dan media promosi lainnya dengan hasil tajam dan presisi tinggi.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4 text-center animate-box">
-                <div class="services">
-                    <span class="icon"><i class="icon-printer"></i></span>
+                <div class="services-wrap">
+                    <div class="services-img" style="background-image: url('{{ asset('template/images/services-2.jpg') }}');"></div>
                     <div class="desc">
-                        <h3>Percetakan</h3>
-                        <p>Percetakan berbagai media mulai dari brosur, kemasan, hingga seragam perusahaan.</p>
+                        <h3>Desain Grafis</h3>
+                        <p>Tim kreatif kami siap membantu Anda menciptakan desain profesional yang memperkuat identitas merek bisnis Anda.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4 text-center animate-box">
-                <div class="services">
-                    <span class="icon"><i class="icon-gift"></i></span>
+                <div class="services-wrap">
+                    <div class="services-img" style="background-image: url('{{ asset('template/images/services-3.jpg') }}');"></div>
                     <div class="desc">
-                        <h3>Merchandise Promosi</h3>
-                        <p>Penyediaan souvenir dan merchandise custom untuk kebutuhan branding Anda.</p>
+                        <h3>Promotional Merchandise</h3>
+                        <p>Produksi merchandise seperti kaos, totebag, dan mug dengan desain custom dan kualitas terbaik.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+@endsection
